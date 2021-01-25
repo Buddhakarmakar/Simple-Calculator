@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+	<center>
+		<h2>Simple Calculator</h2>
+		<div class="container">
+			<table>
+				
+				<tr>
+					<td colspan="3">
+						<input type="text" name="" class="main_screen" id="screen" readonly >
+					</td>
+					<td colspan="2">
+						<input type="text" name="" class="result_screen" id="result" readonly >
+					</td>
+				</tr>
+				<tr>
+					
+					<td><input type="button" value="7" onclick="dis('7')"/> </td> 
+		            <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+		            <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+		            <td><input type="button" value="AC" onclick="clear_all()" style="background-color: red;"/> </td> 
+		            <td><input type="button" value="Clr" onclick="back()"></td>
+				</tr>
+				<tr>
+					
+					<td><input type="button" value="4" onclick="dis('4')"/> </td> 
+		            <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+		            <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+		            <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+		            <td><input type="button" value="*" onclick="dis('*')"></td>
+				</tr>
+				<tr>
+					
+					<tr>
+					
+					<td><input type="button" value="3" onclick="dis('3')"/> </td> 
+		            <td><input type="button" value="2" onclick="dis('')"/> </td> 
+		            <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+		            <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+		            <td><input type="button" value="/" onclick="dis('/')"></td>
+				</tr>
+				<tr>
+					<td colspan="5"><input type="button" value="=" onclick="solve()" style="width:95%;border-radius:0%;"></td>
+				</tr>
+			</table>
+
+		</div>
+</center>
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+</html>
